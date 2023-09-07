@@ -24,13 +24,13 @@ class MyDataClass:
 ```
 with above, now every instance of MyDataClass will automatically be persisted in a TinyDB database located at output/db.json.
 
-# Extending DataCrash
+# extending datacrash
 datacrash is designed with extensibility in mind. You can easily create plugins to support other storage backends:
 
-Create a New Plugin Class: Your plugin class should inherit from the base Plugin class provided by datacrash.
-Implement Required Methods: Depending on the storage backend, you might need to override methods like hook, on_init, and on_change.
-Use Your Plugin: Once your plugin is ready, simply pass it to the datacrash decorator to start using it.
-For more details on creating plugins, refer to the provided TinydbPlugin as an example.
+create a new plugin: the plugin class should inherit from the base plugin class provided by datacrash as the hooks will be more defined later.
+implement required rethods: depending on the storage backend, you might need to override methods like hook, on_init, and on_change.
 
+using the 🔌: Once your plugin is ready, simply pass it to the datacrash decorator to start using it.
+for more details on creating plugins, refer to the provided TinydbPlugin as an example.
 
 The `hooks` might change as its unclear to me best way to modify the classes that `@dataclass` wraps (ideally would use `__post_init__` but dont think that is feasible)
