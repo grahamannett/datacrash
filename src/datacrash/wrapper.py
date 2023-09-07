@@ -19,7 +19,7 @@ def datacrash(plugins: list[Plugin]):
             raise TypeError("datacrash can only be applied to dataclasses")
 
         for plugin in plugins:
-            cls = plugin.process(cls)
+            cls = plugin.hook(cls)
         return cls
 
     return outer_wrapper
