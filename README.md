@@ -4,8 +4,8 @@ the point of this module is to make something as understandable and chill as dat
 it provides a decorator that wraps around standard dataclasses, allowing for automatic data storage without altering the original data or its behavior.
 
 # features
-transparent integration: use datacrash with your existing dataclasses without any modifications to the actual data. (not sure if this is true tbh)
-extensible: extend dataclasses to be logged/stored/etc with anything
+- transparent integration: use datacrash with your existing dataclasses without any modifications to the actual data. (not sure if this is true tbh)
+- extensible: extend dataclasses to be logged/stored/etc with anything
 
 ## Basic Usage
 
