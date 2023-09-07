@@ -10,7 +10,6 @@ extensible: extend dataclasses to be logged/stored/etc with anything
 ## Basic Usage
 
 ```python
-Copy code
 from dataclasses import dataclass
 from datacrash import datacrash
 from datacrash.plugins.tinydb import TinydbPlugin
