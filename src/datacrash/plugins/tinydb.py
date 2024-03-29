@@ -1,5 +1,6 @@
 from tinydb import TinyDB, table
 from dataclasses import asdict
+
 from datacrash.plugin import Plugin
 
 
@@ -8,7 +9,7 @@ class DefaultDb(TinyDB):
         super().__init__(db_file)
 
 
-class TinydbPlugin(Plugin):
+class TinyDB_Plugin(Plugin):
     def __init__(self, db: TinyDB = None, db_path: str = None):
         self.db = db or DefaultDb(db_path)
 

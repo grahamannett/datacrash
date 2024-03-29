@@ -2,9 +2,9 @@ import unittest
 from dataclasses import dataclass
 
 from datacrash import datacrash
-from datacrash.plugins.tinydb import TinydbPlugin
+from datacrash.plugins.tinydb import TinyDB_Plugin
 
-tinydb = TinydbPlugin(db_path="output/db.json")
+tinydb = TinyDB_Plugin(db_path="output/db.json")
 
 
 @dataclass
